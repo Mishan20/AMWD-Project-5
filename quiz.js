@@ -16,7 +16,22 @@ function startQuiz() {
             answer: "Paris"
         },
         {
-            question: "2. What is 2 + 2?",
+            question: "2. What is 2 + 2 ?",
+            choices: ["3", "4", "5", "6"],
+            answer: "4"
+        },
+        {
+            question: "3. What is 2 + 1 ?",
+            choices: ["3", "4", "5", "6"],
+            answer: "3"
+        },
+        {
+            question: "4. What is 4 + 2 ?",
+            choices: ["3", "4", "5", "6"],
+            answer: "6"
+        },
+        {
+            question: "5. What is 6 - 2 ?",
             choices: ["3", "4", "5", "6"],
             answer: "4"
         },
