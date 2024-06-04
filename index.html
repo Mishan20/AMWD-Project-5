@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Application</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="loginPage" class="container">
+        <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+            <div class="d-flex flex-column align-items-center">
+                <img src="./assets/FAQ.png" class="d-inline-block align-top w-50 h-100" alt="">
+            </div>
+        </nav>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h2 class="card-title mb-4 h-40">Login</h2>
+                        <img src="./assets/Ellipse 5.png" class="rounded-circle mb-3 mt-3" alt="User Photo" width="182" height="182">
+                        <form id="loginForm">
+                            <div class="form-group mt-4">
+                                <label for="name">Enter your name:</label>
+                                <input type="text" id="name" class="form-control" width="308px" required>
+                            </div>
+                            <button type="submit" class="btn btn-custom btn-block mt-4 ">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Page -->
+    <div id="mainPage" class="container" style="display: none;">
+        <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+            <div class="d-flex flex-column align-items-center">
+                <img src="./assets/FAQ.png" class="d-inline-block align-top w-50 h-100" alt="">
+            </div>
+            <div class="collapse navbar-collapse">
+                <span class="navbar-text ml-auto" id="userName"></span>
+            </div>
+        </nav>
+        <div class="row justify-content-center mt-5 pt-5">
+            <div class="col-md-8 content-wrapper">
+                <div id="quizContainer"></div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-end">
+                <button class="btn btn-custom mt-3" id="nextButton">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>
